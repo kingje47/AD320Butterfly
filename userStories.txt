@@ -1,3 +1,5 @@
 1. As a user I want to be able to publicly share my wishlist.
 2. As a user I want to be able to select individual items to hide from my publicly shared list.
 3. As a user I want to be receive a notification if the price falls below an amount that I set manually.
+
+This is a test for accessing remote repo from seperate account.
