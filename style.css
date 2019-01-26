@@ -1,0 +1,190 @@
+/*CSS Styles*/
+
+
+ * {
+    padding:0;
+    margin:0;	
+     box-sizing: border-box;
+}
+
+    body  {
+    background:white;
+    }
+
+    #wrapper {
+	width:940px;
+	margin:0 auto;
+	}
+    
+    header{
+        background: none;
+        padding-bottom: 20px;
+}
+    header img
+   {
+       width:250px;
+       margin: 0 auto;
+}
+    
+
+    #wrapper {
+	width:940px;
+	margin:0 auto;
+	}
+    
+/*
+    nav{
+        height:50px;
+        line-height:50px;
+        background:black;
+        
+    }
+    nav li{
+        float:left;
+        list-style-type: none;
+        width:20%;
+        text-align:center;
+        
+    }
+    nav a {
+        text-decoration: none;
+        color:gray;
+        
+    }
+    nav a:hover{
+        background:white;
+        display: block;
+    }
+
+   
+
+    
+#banner{
+   
+    
+}
+*/
+    
+    main{
+        height:600px;
+        background:none;
+        width:580px;
+        float:left;
+        margin-top: 5px;
+    
+    }
+    main img { 
+        height:300px;
+        width:940px;
+        
+}
+    
+h1{
+    margin-top: 10px;
+    color:black;
+    
+}
+
+
+p{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+    aside{
+        height:400px;
+        width:340px;
+        float:right;
+        border-top: 20px;
+    }
+aside img{
+    height:300px;
+    width:340 px;
+}
+    
+    footer{
+        height:50px;
+        background:#fff;
+        clear:both;
+    }
+    footer ul{
+        padding-left: 20px;
+    }
+    footer li{
+        float:left;
+        list-style-type: none;
+        margin-right:30px;
+        
+    }
+
+    img{
+        max-width: 100%;
+        display:block;
+        
+}
+    
+
+
+.img-container {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+form{
+      max-width: 580px;
+        
+    }
+    
+    fieldset{
+        padding:10px;
+        border: 1px solid red;
+    }
+    
+   
+    
+    label{
+    display:block;
+    margin-bottom:5px;
+    }
+    
+    input[type=text],input[type=email]{
+    height: 20px;
+    width:98%;
+    margin-bottom:10px;
+    }
+    
+    input[type=radio],input[type=checkbox]{
+    margin-right: 7px;
+
+    }
+    
+    form ul {
+        margin-bottom: 10px; 
+    }
+    
+    form li {
+        list-style-type:none;
+        margin-left:10px;
+        margin-bottom: 4px;
+    }
+    
+    textarea{
+        width:98%;
+        margin-bottom: 10px;
+        resize:both;
+    }
+    legend{
+        font-size:1.4em;
+        padding:8px;
+        font-style:italic;
+            
+    }
