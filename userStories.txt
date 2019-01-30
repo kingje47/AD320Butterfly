@@ -1,3 +1,12 @@
-1. As a user I want to be able to publicly share my wishlist.
-2. As a user I want to be able to select individual items to hide from my publicly shared list.
-3. As a user I want to be receive a notification if the price falls below an amount that I set manually.
+1. User creates an acount
+2. As a user I am able to create shopping lists, and a wish list of things to buy.
+3. As a user I am  to add to shopping(wish) list, delete, or change entry 
+4. As a user I am able to attach a comment or note to an entry.
+5. As a user I am able to sort my list manually. 
+6. As a user I want to be able to publicly share my wishlist.
+7. As a user I want to be able to select individual items to hide from my publicly shared list.
+8. As a user I want to be receive a notification if the price falls below an amount that I set manually.
+9. I am alerted entry changed price in a "Feature Products" section.
+10. As a user I am able to view my list history.
+11. As a user I am able to attach gift card information.
+12. As a user I am able to view my lists on my desktop, tablet and phone.

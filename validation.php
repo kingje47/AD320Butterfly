@@ -1,37 +1,49 @@
 <?php
+//stores the URL the request is sent to
+$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+// define variables and initialize with empty values
+$itemNameErr = $sizeErr = "";
+$itemName = $size =  $price = $url = "";
 
-if(isset($_GET["ItemName"])){
-    echo .$_GET["ItemName"];
-} else{
-    echo "Missing Item Name !!";
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
+    if (empty($_GET["itemName"])) {
+        $itemNameErr = "Missing";
+    }
+    else {
+        $itemName = $_GET["itemName"];
+        echo "itemName: $itemName<br />";
+    }
+
+    if (empty($_GET["size"])) {
+        $sizeErr = "Missing";
+    }
+    else {
+        $price = $_GET["size"];
+        echo "size: $price<br />";
+    }
+
+    if (empty($_GET["price"]))  {
+        $price = "";
+    }
+    else {
+       $price = $_GET["price"];
+        echo "price: $price<br />";
+    }
+     if (empty($_GET["url"]))  {
+        $url = "";
+    }
+    else {
+        $url = $_GET["url"];
+        echo "url: $url<br />";
+    }
 }
 
-if(isset($_GET["Size"])){
-    echo .$_GET["Size"];
-} else {
-    echo"Missing Item's Size !!";
-}
-
-if(isset($_GET["Price"])){
-    echo .$_GET["Price"];
-} else {
-    echo"Missing Item's Price !!";
-}
-
-if(isset($_GET["URL"])){
-    echo .$_GET["URL"];
-} else {
-    echo"Missing Item's URL !!";
-}
-
-
-
-// if (!empty($_GET["item3"])){
-    echo .$_GET["item3"];
-}
-
-//if (!empty($_GET["item4"]])){
-    echo .$_GET["item4"];
-}  
-
+    //echo "Name: $name<br />";
+        
+    //echo "Email: $email<br />";
+        
+    //echo "Phone: $phoneNumber<br />";
+        
+    //echo "State: $stateOfResidency<br />";
+    
 ?>
