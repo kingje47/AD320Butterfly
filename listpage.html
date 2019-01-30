@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Home</title>
+    <title>Home</title>
+
 <link href="style.css" type="text/css" rel="stylesheet">
 </head>
 
@@ -13,61 +14,42 @@
             <img src="logo.jpg" alt="logo">
             </a>
         </header>
-        
-        
-        
-        <div id="banner">
-
-        </div>
-
-
         <main>
-            <h2>Name of List</h2>
+            <h2>Entering Wish List</h2>
             
                 <!--We should decide how many items that user must input; I set 2 for now -->
-                <span class="error">* required field</span><br><br>
+            <p> <span class="error">* required field</span></p>
             
-                <form action="validation.php" method="get">    
-                  <span class="error">* </span>
-                  Item Name: <input type="text" name="ItemName" required><br>
-                  <span class="error">* </span>
-                  Size: <input type="text" name="Size" required><br>
-                  <span class="error">* </span>  
-                  Price: <input type="text" name="Price" required><br>
-                  <span class="error">* </span> 
-                  URL: <input type="text" name="URL" required><br>
+                <form method="GET" action="validation.php" onsubmit="return validation();"> 
+                    
+                  Item Name: <input type="text" name="itemName" required><br>
+                  <span class="error">* <?php echo $itemNameErr;?></span>
+                    <br><br>
+                
+                  Size: <input type="text" name="size" required><br>
+                    <span class="error">* <?php echo $sizeErr;?></span>
+                    <br><br>
+                    
+                  Price: <input type="text" name="price" required><br>
+                  <span class="error">* <?php echo $priceErr;?></span>
+                    <br><br>
+                    
+                  URL: <input type="text" name="url"><br>
+                  <br><br>
+                    
                   <input type="submit" name="submit" value="Submit">  
                     
                 </form>
-            
         </main>
-        
         <aside>
             <img src="shopping.jpg" alt="shopping">
             
-            <h2>Item info</h2>
-                <ul style="list-style-type:disc;">
-                  <li>Item 1 </li>
-                  <li>Item 2 </li>
-                  <li>Item 3 </li>
-                  <li>Item 4 </li>
-                </ul>  
-            
-
+            <h2> In My Wish List</h2>
+                <ol id="wishList" style="list-style-type:disc;">
+                </ol> 
         </aside>
-        
-        
-        
-        
-   
-        
-        
-    <footer>
-        <ul>
-        </ul>       
-    </footer>
-             
-    </div><!--end wrapper-->
-    
+
+    </div>
+            
 </body>
 </html>
