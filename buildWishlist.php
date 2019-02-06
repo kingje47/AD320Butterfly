@@ -1,28 +1,40 @@
 <?php
 
-function buildWishlist($wishlistData){
-  if(!(empty($wishlistData["Item"]))
-  && (!(empty($wishlistData["Size"])))
-  && (!(empty($wishlistData["Price"])))
-  && (!(empty($wishlistData["URL"]) ))){
-    $output_string = "";
-    $div_start = "<div ";
-    $inline_css = "class='wishlistRow'" .
-                  "style='border: 1px solid black;".
-                  "padding left: 10px; margin: 5px;" .
-                  "width: 30%;float: left;'".
-                  ">";
-    $itemVal = $wishlistData["Item"];
-    $sizeVal = $wishlistData["Size"];
-    $priceVal = $wishlistData["Price"];
-    $URLVal = $wishlistData["URL"];
-    $div_end = "</div>";
+$servername = "127.0.0.1";
+$username = "root";
+$password = "Narwhal47*";
+$dbname = "butterfly";
 
-    return $div_start . $inline_css . $itemVal . $sizeVal . $priceVal . $URLVal . $div_end;
+$conn = new mysqli($servername, $username, $password, $dbname);
 
+if ($conn->connect_error){
+  die("Connection failed: " . $conn->connect_error);
 }
-}
-//generateWishlist(array("Item"=>"TESTITEM", "Size"=>"TESTSIZE", "Price"=>"TESTPRICE", "URL"=>"TESTURL"));
+
+$query = "SELECT * FROM item;";
+
+$result = $conn->query($query);
+
+  if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()){
+      echo
+        "||Item Name: "
+        . $row["item_name"]
+        . "|| "
+        . "||Price: "
+        . $row["item_price"]
+        . "|| "
+        . "||Size: "
+        . $row["item_size"]
+        . "|| "
+        . "||URL: "
+        . $row["item_URL"]
+        . "||<br>";
+
+    }}
+
+
+
 
 
 

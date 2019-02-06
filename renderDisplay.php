@@ -2,7 +2,7 @@
   require 'buildWishlist.php';
 
 function renderWishlistToPage($queryArray){
-  echo "<span id='wishlistList'>";
+  echo "<div id='wishlistList'>";
   foreach($queryArray as $dataRow){
     echo buildWishlist($dataRow);
   }
