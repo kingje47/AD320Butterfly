@@ -6,13 +6,8 @@
     margin:0;	
      box-sizing: border-box;
 }
-
-    body  {
-    background:white;
-    }
-
     #wrapper {
-	width:940px;
+	width:500px;
 	margin:0 auto;
 	}
     
@@ -20,17 +15,21 @@
         background: none;
         padding-bottom: 20px;
 }
-    header img
-   {
-       width:250px;
-       margin: 0 auto;
-}
     
+    #butterfly { 
+    text-align: center;
+    width: 150px;
+    border: none;
+    display: block;
+    margin: auto;
 
-    #wrapper {
-	width:940px;
-	margin:0 auto;
-	}
+    }
+#wishes {
+    text-align:center; 
+    width: 70%;
+    margin-left:10%;
+    margin-right:05%;
+}
     
 /*
     nav{
@@ -79,10 +78,10 @@
         
 }
     
-h1{
+h1, h2{
+    text-align: center;
     margin-top: 10px;
     color:black;
-    
 }
 
 

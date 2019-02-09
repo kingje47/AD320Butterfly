@@ -1,0 +1,1 @@
+I used myPHPAdmin to create the tables to manipulate the app
