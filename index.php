@@ -2,8 +2,6 @@
 
   require 'renderDisplay.php';
 
-  renderWishlistToPage();
-
-
+  renderWishlistToPage($wishlistData);
 
  ?>

@@ -16,38 +16,38 @@
         </header>
         <main>
             <h2>Entering Wish List</h2>
-
+            
                 <!--We should decide how many items that user must input; I set 2 for now -->
             <p> <span class="error">* required field</span></p>
-
-                <form method="GET" action="index.php" onsubmit="return validation();">
-
-                  Item Name: <input type="text" name="itemName" ><br>
+            
+                <form method="GET" action="validation.php" onsubmit="return validation();"> 
+                    
+                  Item Name: <input type="text" name="itemName" required><br>
                   <span class="error">* <?php echo $itemNameErr;?></span>
                     <br><br>
-
-                    Price: <input type="text" name="price" required><br>
-                    <span class="error">* <?php echo $priceErr;?></span>
+                
+                  Size: <input type="text" name="size" required><br>
+                    <span class="error">* <?php echo $sizeErr;?></span>
                     <br><br>
-
-                    Size: <input type="text" name="size" required><br>
-                      <span class="error">* <?php echo $sizeErr;?></span>
-                      <br><br>
-
+                    
+                  Price: <input type="text" name="price" required><br>
+                  <span class="error">* <?php echo $priceErr;?></span>
+                    <br><br>
+                    
                   URL: <input type="text" name="url"><br>
                   <br><br>
-
-                  <!-- <input type="submit" name="submit" value="Delete"> -->
-                  <input type="submit" name="submit" value="Submit">
-
+                    
+                  <input type="submit" name="submit" value="Submit">  
+                    
                 </form>
         </main>
         <aside>
             <img src="shopping.jpg" alt="shopping">
-
+            
             <h2> In My Wish List</h2>
                 <ol id="wishList" style="list-style-type:disc;">
-
+                </ol> 
+                <button type="button" onclick="deleteItem()" >Delete !</button> 
                     <!--Change the funciton name of deleteItem()-->
                 <button onclick="sortList()">Sort !</button>
                 <button onclick="updateList()">Update !</button>
@@ -55,6 +55,6 @@
         </aside>
 
     </div>
-
+            
 </body>
 </html>
