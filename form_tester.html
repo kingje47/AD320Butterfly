@@ -1,0 +1,25 @@
+<html>
+<script>
+function FormValidater(){
+    var x = document.forms["inputs"]["Name"].value;
+    var y = document.forms["inputs"]["Email"].value;
+    if (x == "" || y == ""){
+    alert ("You must at least enter your Name and Email");
+    return false;
+    }
+    }
+
+</script>
+
+<form name="inputs" action="AD320Assignment2PHP.php" onsubmit="return FormValidater()" method="get">
+Name:<input type="text" name="Name">
+<br>
+Email:<input type="text" name="Email">
+<br>
+Phone:<input type="tel" name="PhoneNumber">
+<br>
+State:<input type="text" name="State">
+<br>
+<input type="submit">
+</form>
+</html>
