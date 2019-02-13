@@ -20,24 +20,23 @@
                 <!--We should decide how many items that user must input; I set 2 for now -->
             <p> <span class="error">* required field</span></p>
 
-                <form method="GET" action="index.php" onsubmit="return validation();">
+                <form method="GET" action="validation.php" onsubmit="return validation();">
 
-                  Item Name: <input type="text" name="itemName" ><br>
+                  Item Name: <input type="text" name="itemName" required><br>
                   <span class="error">* <?php echo $itemNameErr;?></span>
                     <br><br>
 
-                    Price: <input type="text" name="price" required><br>
-                    <span class="error">* <?php echo $priceErr;?></span>
+                  Size: <input type="text" name="size" required><br>
+                    <span class="error">* <?php echo $sizeErr;?></span>
                     <br><br>
 
-                    Size: <input type="text" name="size" required><br>
-                      <span class="error">* <?php echo $sizeErr;?></span>
-                      <br><br>
+                  Price: <input type="text" name="price" required><br>
+                  <span class="error">* <?php echo $priceErr;?></span>
+                    <br><br>
 
                   URL: <input type="text" name="url"><br>
                   <br><br>
 
-                  <!-- <input type="submit" name="submit" value="Delete"> -->
                   <input type="submit" name="submit" value="Submit">
 
                 </form>
@@ -47,11 +46,7 @@
 
             <h2> In My Wish List</h2>
                 <ol id="wishList" style="list-style-type:disc;">
-
-                    <!--Change the funciton name of deleteItem()-->
-                <button onclick="sortList()">Sort !</button>
-                <button onclick="updateList()">Update !</button>
-                    <!--Change the function name of Update()-->
+                </ol>
         </aside>
 
     </div>
